@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.karthik.example.calender"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+       
+        <!-- BroadCast Receivers -->
+        <receiver android:name=".service_recivers.MyAlarmReciver" />
+        <receiver
+            android:name=".service_recivers.RebootHandler"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <!-- Services -->
+         <service
+            android:name=".service_recivers.SetRepeatAlarmService"
+            android:enabled="true" />
+        <service android:name=".service_recivers.SetAlarmService" /> 
+
+        <activity
+            android:name=".ShowAlarm"
+            android:label="@string/title_activity_show_alarm"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+        </activity>
+      <activity android:name="com.karthik.example.calender.EventActivity"
+          android:screenOrientation="portrait"
+          android:windowSoftInputMode="stateHidden">
+        <!-- Parent activity meta-data to support 4.0 and lower -->
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".MainActivity" />
+          
+      </activity>
+        <activity
+            android:name="com.karthik.example.calender.MainActivity"
+             android:configChanges="orientation|screenSize"
+             android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

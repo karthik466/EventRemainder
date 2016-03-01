@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Event Remainder</string>
+    <string name="save_txt">Save</string>
+    <string name="cancel_btn">Cancel</string>
+    <string name="add_event_txt">Add Event</string>
+    <string name="eve_title_txt">Event Name *</string>
+    <string name="eve_time_txt">Time *</string>
+    <string name="eve_note_txt">Message</string>
+    <string name="no_eve_txt">No Events Found</string>
+    <string name="next_event">Next Event</string>
+    <string name="title_activity_show_alarm">ShowAlarm</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="update_txt">Update</string>
+    <!-- Menu Items -->
+    <string name="edit_txt">Edit</string>
+    <string name="del_txt">Delete</string>
+    <string name="tone">Alarm Tone</string>
+
+    <!-- Dialogs -->
+    <string name="dialog_delete_msg"> Do you want to delete following record ?</string>
+    <string name="events_type">Theme</string>
+    <string name="events_prof_txt">Professional</string>
+    <string name="events_pers_txt">Personal</string>
+    <string name="events_holi_txt">Holiday</string>
+    <string name="events_upload_txt">Select Event Image</string>
+    <string name="upload_txt">Upload</string>
+    <!-- Settings -->
+    <string name="remainder_type_txt">Alert Type</string>
+    <string name="notify_type_txt">Notification</string>
+    <string name="alram_type_txt">Alarm</string>
+    <string name="title_activity_single_event">SingleEventActivity</string>
+    <string name="allvents">All Events</string>
+    <string name="tone_setting">Tone Settings</string>
+    <string name="age_txt">Age Finder</string>
+    <string name="exists_txt">Close</string>
+    <string name="title_activity_main">MainActivity</string>
+
+</resources>

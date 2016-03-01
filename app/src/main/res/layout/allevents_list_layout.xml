@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+<LinearLayout 
+    android:id="@+id/main_ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:orientation="vertical" >
+
+   <TextView 
+       android:id="@+id/pre_half_year_data_textview"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="@string/app_name"
+       android:textSize="19sp"
+       android:gravity="center"
+       android:visibility="gone"
+       android:textColor="@color/white"
+       android:background="@color/blue"
+       />
+
+    <LinearLayout
+        android:id="@+id/show_list_data"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"       
+        android:layout_weight="1"
+        android:layout_margin="5dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/show_list_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <ExpandableListView
+            android:id="@+id/show_data_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:groupIndicator="@null" 
+            android:visibility="gone"/>
+        <ListView 
+            android:id="@+id/show_data_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            />
+    </LinearLayout>
+ <TextView 
+       android:id="@+id/result_txt"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="@string/app_name"
+       android:textSize="19sp"
+       android:gravity="center"
+       android:visibility="gone"
+       android:textColor="@color/white"
+       android:background="@color/blue"
+       />
+</LinearLayout>
+
+<ImageView 
+        android:id="@+id/allevents_curr_event_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_action_next_item"
+        android:layout_alignParentBottom="true"
+        android:scaleType="centerInside"
+        android:background="@drawable/add_event_circle"
+        android:contentDescription="@string/app_name"
+        android:layout_marginBottom="50dp"       
+        android:layout_marginLeft="20dp"/>
+</RelativeLayout>

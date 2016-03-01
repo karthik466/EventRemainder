@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="D:\AS_Workspace\EventRemainder\app\build\intermediates\transforms\instantRunSlicer\debug\jars\1\5\main_slice.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="4e72b38900fa97b2f0a7e5dc68a085371606bf44">
+        <dex dex="D:\AS_Workspace\EventRemainder\app\build\intermediates\transforms\dex\debug\folders\1000\5\main_slice_ecc727c284eacf884522eaad04ce3458f4f491df\classes.dex" />
+    </item>
+    <item
+        jar="D:\AS_Workspace\EventRemainder\app\build\intermediates\transforms\instantRunSlicer\debug\jars\1\1a\dependencies.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="ac95630af6e7390798f612fbfba0e693d9d07fee">
+        <dex dex="D:\AS_Workspace\EventRemainder\app\build\intermediates\transforms\dex\debug\folders\1000\1a\dependencies_5ab2f396999e7e405f3ecea84ab09f51b94d79b6\classes.dex" />
+    </item>
+
+</items>

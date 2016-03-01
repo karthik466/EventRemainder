@@ -1,0 +1,97 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+   
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"        
+        android:visibility="visible" >
+         <include
+        android:id="@+id/app_bar"
+        layout="@layout/actionbar"
+        android:visibility="visible" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.3" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/app_icon"
+                android:contentDescription="@string/app_name" />
+
+            <ImageView
+                android:id="@+id/event_imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY" />
+        </FrameLayout>
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.7"
+            layout="@layout/single_event_info" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="right"
+        android:layout_margin="20dp"
+        android:orientation="vertical" >
+
+ 
+
+ <ImageButton
+     android:id="@+id/delete_btn"     
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:background="@drawable/cricle_red"
+     android:contentDescription="@string/app_name"
+     android:padding="5dp"
+     android:scaleType="fitXY"
+     android:layout_marginTop="10dp"
+     android:visibility="gone"
+     android:src="@drawable/ic_action_discard" />
+
+ <RelativeLayout 
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content">
+ <ImageButton
+     android:id="@+id/edit_btn"     
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:background="@drawable/criculer_bg"
+     android:contentDescription="@string/app_name"
+     android:padding="5dp"
+     android:scaleType="fitXY"
+     android:layout_marginTop="10dp"
+      android:visibility="gone"
+     android:src="@drawable/ic_action_edit" />
+ 
+ <ImageButton
+     android:id="@+id/save_btn"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:background="@drawable/criculer_bg"
+     android:contentDescription="@string/app_name"
+     android:padding="5dp"
+     android:scaleType="fitXY"
+     android:layout_marginTop="10dp" 
+      android:visibility="gone"    
+     android:src="@drawable/ic_action_accept" />
+</RelativeLayout>
+    </LinearLayout>
+
+</FrameLayout>
