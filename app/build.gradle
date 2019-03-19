@@ -7,7 +7,7 @@ android {
     defaultConfig {
         applicationId "com.karthik.example.calender"
         minSdkVersion 14
-        targetSdkVersion 22
+        targetSdkVersion 27
     }
 
     buildTypes {
